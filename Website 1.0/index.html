@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--update/merge this version with the one on REM--> 
+<html lang="en">
+  <head>
+    <meta name="indexV1.html" content="width=device-width, initial-scale=1" />
+    <title>
+      Business Initiatives International Ltd|Official Website
+    </title>
+    <!--copied in oreder to make navigation bar-->
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: silver;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: aqua;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+  </head>
+  <body style="text-align: center; background-color: white">
+    <!--alternative values are 220,220,220-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="indexV1.html">Home</a>
+      <a href="aboutV1.html">About</a>
+      <a href="contactV1.html">Contact</a>
+    </div>
+    <script>
+      function openNav()
+      {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav()
+      {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <img src="BIILogo.png" alt="BIIL logo" width="100" height="100" style="float: right"/> <!--figyre out how to make it not affect position of other text-->
+    <!--BIIl logo png format from REM at biil-->
+    <h1 style="font-size: 40px; color: teal">
+      <i style = "color: #008B8B">For All Your Real Estate Needs</i>
+      <!--Investigate the input tag-->
+    </h1>
+    <!--Where the links start, use url in href argument when you post on the Internet, make an interactive slide-in menu from left with key contact info right below slogan-->
+        <a href="about.html" target="_blank" style="color: fuchsia">About</a>|
+        <a href="appoint.html" target="_blank" style="color: fuchsia">Appointment</a><br>
+        <a href="staff.html" target="_blank" style="color: fuchsia">Contact</a>|
+        <p>Contact Us:
+          <a href="tel:+256772403916" style="color: fuchsia">+256 772 403 916</a>|
+          <a href="tel:+256414371515" style="color: fuchsia">+256 414 371 515</a>
+        </p>
+        <!--Where the links end-->
+        <!--update with old kampala-->
+        <p>
+          <b>P.O Box 36427 Kampala, Uganda<br>Plot 5, Dewinton Rd<br>1st Floor, Suite F8</b>
+        </p>
+        <!--actual content-->
+        <p style="text-align: center; font-size: 20px">
+          Welcome to the Official Website of <br>
+          <u>Business Initiatives International Limited (BIIL)</u>
+          <br>
+          <button onclick="changeContent();">MyfirstButton</button>
+        </p>
+        <p id="buttonpress">Did it work?</p>
+        <script type="text/javascript">
+          function changeContent() {
+   	      document.getElementById("buttonpress").innerHTML = "Yes! Go away now.";
+          }
+          console.log("Don't you dare manipulate this site, you motherf-")
+          //What's the difference between console and output? they're the same if its a console application, but different if the user wont be interacting with a console eg in websites and other nonsense. How do you remove the console link from a Website? It was never there. You only saw it on your phone, so ou can't jump to any conclusions
+        </script>
+  </body>
+</html>
